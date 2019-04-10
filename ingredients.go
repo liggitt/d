@@ -3,7 +3,7 @@ package d
 import (
 	"strings"
 
-	"github.com/liggitt/c"
+	c "github.com/liggitt/c/v2"
 )
 
 func Ingredients() []string {
@@ -11,5 +11,5 @@ func Ingredients() []string {
 }
 
 func CakeAvailable() bool {
-	return !strings.Contains(c.CakeOrDeath(), "death")
+	return !strings.Contains(c.CakeOrDeath("cake"), "death")
 }
